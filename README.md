@@ -40,14 +40,6 @@ A basic calculator that performs arithmetic operations using JavaScript.
 
 ---
 
-## 📌 Internship Details
-- **Internship:** CODSOFT – Web Development
-- **Level:** Level 1
-- **Duration:** 1 Month
-- **Mode:** Remote
-
----
-
 ## 👩‍💻 Author
 **Mahek Katwala**  
 GitHub: https://github.com/mahekCreates  

@@ -1,109 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mahek Katwala | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahek | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <nav class="navbar">
+    <div class="nav-wrap">
+      <div class="logo">MAHEK KATWALA</div>
 
-  <!-- HERO -->
-<section class="hero">
-  <img src="images/profile.jpg" alt="Mahek Katwala">
-  <h1>Hi, I'm Mahek Katwala</h1>
-  <h1 class="welcome-text">Welcome to my portfolio</h1>
-  <br><br>
-  <a href="#projects" class="btn">View My Work</a>
-</section>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-  <hr> 
+  <section class="hero" id="about">
+    <div class="hero-left">
+      <h1>Hi, I’m Mahek.<br> I build clean & creative websites.</h1>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <div class="content">
-      <h2>About Me</h2>
-      <p>
-        I’m a Software Development student passionate about web development and UI/UX design.
-        I love building responsive websites and creating clean, user-friendly digital experiences
-        by blending creativity with code.
+      <p class="hero-desc">
+        I’m a passionate learner who loves designing modern web pages and working on
+        beginner-friendly projects using HTML, CSS and JavaScript.
       </p>
+
+      <div class="hero-btns">
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
     </div>
-  </section>
 
-    <hr> 
-
-  <!-- SKILLS -->
-  <section class="skills">
-    <div class="content">
-      <h2>Skills</h2>
-      <div class="skill-tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>React.js</span>
-        <span>UI/UX Design</span>
-        <span>Git & GitHub</span>
-        <span>Figma</span>
-        <span>Canva</span>
-        <span>Adobe Photoshop</span>
+    <div class="hero-right">
+      <div class="profile-card">
+        <img src="images/profile.jpg" alt="My Photo" />
+        <h3>Mahek Katwala</h3>
+        <small>Front-End Developer • Student</small>
       </div>
     </div>
   </section>
 
-    <hr> 
+  <section class="section" id="skills">
+    <h2 class="section-title">Skills</h2>
 
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
-    <div class="content">
-      <h2>Projects</h2>
-
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>ZENMESHI</h3>
-          <p>
-            A responsive food delivery website built using React.js with login/signup,
-            menu listing, and cart functionality.
-          </p>
-        </div>
-
-        <div class="project-card">
-          <h3>MIORO</h3>
-          <p>
-            A dessert business website with WhatsApp ordering integration,
-            designed for a home-based brand.
-          </p>
-        </div>
-
-        <div class="project-card">
-          <h3>SORA & LUNORA</h3>
-          <p>
-            Branding and visual identity concepts created using Adobe Illustrator,
-            Photoshop, and Canva.
-          </p>
-        </div>
-      </div>
+    <div class="skills-grid">
+      <span class="skill-pill">HTML5</span>
+      <span class="skill-pill">CSS3</span>
+      <span class="skill-pill">JavaScript</span>
+      <span class="skill-pill">React</span>
+      <span class="skill-pill">UI Design</span>
+      <span class="skill-pill">Git & GitHub</span>
     </div>
   </section>
 
-  <hr> 
-
-  <!-- CONTACT -->
-  <section class="contact">
-    <div class="content">
-      <h2>Contact</h2>
-      <p>Email: katwalamahek25@gmail.com</p>
-
-      <div class="links">
-        <a href="https://github.com/mahekCreates" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/mahekzn" target="_blank">LinkedIn</a>
-        <a href="resume/resume.pdf" download>Download Resume</a>
-      </div>
-    </div>
+  <section class="section" id="resume">
+    <h2 class="section-title">Resume</h2>
+    <p class="muted">Click below to download my resume in PDF format.</p>
+    <a class="btn primary" href="resume/Resume.pdf" target="_blank" download>Download Resume</a>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
+  <section class="section" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p class="muted">Let’s connect! You can reach me here:</p>
+
+  <div class="contact-box">
+    <p><b>Email:</b> <a href="mailto:katwalamahek25@gmail.com">katwalamahek25@gmail.com</a></p>
+    <p><b>Location:</b> Mumbai</p>
+    <p><b>LinkedIn:</b> 
+      <a href="https://linkedin.com/in/mahekdzn/" target="_blank">https://linkedin.com/in/mahekdzn/</a>
+    </p>
+    <p><b>GitHub:</b> 
+      <a href="https://github.com/mahekCreates" target="_blank">https://github.com/mahekCreates</a>
+    </p>
+  </div>
+
+  </section>
+
+  <footer class="footer">
+    © 2026 Mahek Katwala | All Rights Reserved
   </footer>
 
 </body>
 </html>
+

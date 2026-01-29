@@ -3,63 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Demo</title>
+    <title>ZenCafe Gaming Lounge</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Hero Section -->
     <header>
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>Welcome to Our Website</h1>
-            <p>Collaborate, create, and achieve together!</p>
-            <a href="#demo" class="btn">For Demo Click Here</a>
-        </div>
+        <nav>
+            <h1>ZenCafe</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Book</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section class="about">
-        <div class="container about-container">
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>We are a team of creative individuals passionate about web development and design. 
-                    Our goal is to build projects that are both functional and visually appealing. 
-                    Collaboration and creativity drive us forward!</p>
-            </div>
-            <div class="about-image">
-                <img src="images/about.jpg" alt="Teamwork Illustration">
-            </div>
-        </div>
+    <section class="hero">
+        <h2>Game. Chill. Repeat.</h2>
+        <p>ZenCafe Gaming Lounge — where every gamer finds their zone.</p>
+        <a href="#contact" class="cta-button">Book Your Slot</a>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <h2>Our Features</h2>
-            <div class="feature-grid">
-                <div class="feature-box">
-                    <h3>Team Collaboration</h3>
-                    <p>Work efficiently together to create amazing projects.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Creative Design</h3>
-                    <p>Unique layouts and modern aesthetics for every project.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Easy Customization</h3>
-                    <p>Edit content, colors, and layouts easily to match your brand.</p>
-                </div>
-            </div>
-        </div>
+    <section id="about" class="info-section">
+        <h2>About ZenCafe</h2>
+        <p>ZenCafe is a modern gaming lounge designed for casual and hardcore gamers alike. Immerse yourself in multiplayer battles, co-op adventures, or just chill in our neon-lit ambiance.</p>
     </section>
 
-    <!-- Footer -->
+    <section id="games" class="info-section">
+        <h2>Our Games</h2>
+        <ul>
+            <li>Multiplayer Arenas</li>
+            <li>FPS & Shooter Games</li>
+            <li>Racing & Sports</li>
+            <li>VR Adventures</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="info-section">
+        <h2>Book Your Gaming Slot</h2>
+        <p>Fill in the form below and reserve your spot at ZenCafe.</p>
+        
+        <form class="booking-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <select name="game" required>
+                <option value="" disabled selected>Select Game</option>
+                <option value="Multiplayer Arenas">Multiplayer Arenas</option>
+                <option value="FPS">FPS & Shooter</option>
+                <option value="Racing">Racing & Sports</option>
+                <option value="VR">VR Adventures</option>
+            </select>
+            <textarea name="message" placeholder="Message (optional)"></textarea>
+            <button type="submit" class="cta-button">Submit Booking</button>
+        </form>
+    </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Mahek Katwala. All rights reserved.</p>
-        </div>
+        <p>&copy; 2026 ZenCafe Gaming Lounge. All rights reserved.</p>
     </footer>
-
 </body>
 </html>

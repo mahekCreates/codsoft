@@ -6,36 +6,39 @@
 }
 
 body {
-    background-color: #1a1a1a;
+    background-color: #121212;
     color: white;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
+
 header {
-    background: #111;
+    background: #0d0d0d;
     padding: 15px 8%;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Logo left, nav right */
     align-items: center;
 }
 
-nav h1 {
-    color: #ff4f79;
+.logo {
     font-size: 1.6rem;
+    font-weight: bold;
+    color: #ff4f79;
 }
 
 .nav-links {
-    display: flex;
     list-style: none;
-    gap: 25px;
+    display: flex;
+    gap: 30px;
 }
 
 .nav-links a {
-    color: #ff4f79;
     text-decoration: none;
+    color: #ff4f79;
+    font-weight: 500;
     transition: 0.3s;
 }
 
@@ -43,7 +46,8 @@ nav h1 {
     color: #ff1f55;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero {
     text-align: center;
     padding: 120px 20px;
@@ -71,6 +75,7 @@ nav h1 {
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
+    display: inline-block;
 }
 
 .cta-button:hover {
@@ -78,10 +83,15 @@ nav h1 {
     transform: scale(1.05);
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
+
 .info-section {
-    padding: 70px 8%;
+    padding: 80px 8%;
     text-align: center;
+}
+
+.dark-section {
+    background: #1a1a1a;
 }
 
 .info-section h2 {
@@ -89,16 +99,17 @@ nav h1 {
     margin-bottom: 20px;
 }
 
-/* GAME GRID */
+/* ================= GAME GRID ================= */
+
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .game-card {
-    background: #242424;
+    background: #1f1f1f;
     padding: 30px;
     border-radius: 15px;
     transition: 0.3s;
@@ -106,10 +117,11 @@ nav h1 {
 
 .game-card:hover {
     transform: translateY(-8px);
-    background: #2f2f2f;
+    background: #2a2a2a;
 }
 
-/* BOOKING FORM */
+/* ================= BOOKING FORM ================= */
+
 .booking-form {
     max-width: 400px;
     margin: 30px auto;
@@ -124,7 +136,7 @@ nav h1 {
     padding: 12px;
     border-radius: 8px;
     border: none;
-    background: #242424;
+    background: #1f1f1f;
     color: white;
 }
 
@@ -133,40 +145,42 @@ nav h1 {
 }
 
 .success-message {
-    margin-top: 20px;
+    margin-top: 30px;
+    padding: 15px;
+    background: #1f3d2b;
     color: #00ff99;
-    font-weight: bold;
+    border-radius: 10px;
     display: none;
-    animation: fadeIn 0.5s ease-in-out;
 }
 
-/* FOOTER */
+/* Show after submit */
+#success:target {
+    display: block;
+}
+
+/* ================= FOOTER ================= */
+
 footer {
+    background: #0d0d0d;
     text-align: center;
     padding: 20px;
-    background: #111;
     color: #ff4f79;
 }
 
-/* ANIMATION */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+/* ================= RESPONSIVE ================= */
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2.2rem;
-    }
 
     nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .nav-links {
         gap: 15px;
     }
-}
 
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+}

@@ -1,65 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZenCafe Gaming Lounge</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <h1>ZenCafe</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#contact">Book</a></li>
-            </ul>
-        </nav>
-    </header>
+<section id="contact" class="info-section">
+    <h2>Book Your Gaming Slot</h2>
 
-    <section class="hero">
-        <h2>Game. Chill. Repeat.</h2>
-        <p>ZenCafe Gaming Lounge — where every gamer finds their zone.</p>
-        <a href="#contact" class="cta-button">Book Your Slot</a>
-    </section>
+    <form class="booking-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
 
-    <section id="about" class="info-section">
-        <h2>About ZenCafe</h2>
-        <p>ZenCafe is a modern gaming lounge designed for casual and hardcore gamers alike. Immerse yourself in multiplayer battles, co-op adventures, or just chill in our neon-lit ambiance.</p>
-    </section>
+        <select name="game" required>
+            <option value="" disabled selected>Select Game</option>
+            <option>Multiplayer Arenas</option>
+            <option>FPS & Shooter</option>
+            <option>Racing & Sports</option>
+            <option>VR Adventures</option>
+        </select>
 
-    <section id="games" class="info-section">
-        <h2>Our Games</h2>
-        <ul>
-            <li>Multiplayer Arenas</li>
-            <li>FPS & Shooter Games</li>
-            <li>Racing & Sports</li>
-            <li>VR Adventures</li>
-        </ul>
-    </section>
+        <textarea name="message" placeholder="Message (optional)"></textarea>
 
-    <section id="contact" class="info-section">
-        <h2>Book Your Gaming Slot</h2>
-        <p>Fill in the form below and reserve your spot at ZenCafe.</p>
-        
-        <form class="booking-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <select name="game" required>
-                <option value="" disabled selected>Select Game</option>
-                <option value="Multiplayer Arenas">Multiplayer Arenas</option>
-                <option value="FPS">FPS & Shooter</option>
-                <option value="Racing">Racing & Sports</option>
-                <option value="VR">VR Adventures</option>
-            </select>
-            <textarea name="message" placeholder="Message (optional)"></textarea>
-            <button type="submit" class="cta-button">Submit Booking</button>
-        </form>
-    </section>
+        <button type="submit" class="cta-button">Submit Booking</button>
 
-    <footer>
-        <p>&copy; 2026 ZenCafe Gaming Lounge. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <div class="success-message">
+            ✅ Booking Confirmed! See you at ZenCafe 🎮
+        </div>
+    </form>
+</section>

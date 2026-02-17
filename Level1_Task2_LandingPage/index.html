@@ -9,8 +9,9 @@
 <body>
 
 <header>
-    <nav>s
-        <h1>ZenCafe</h1>
+    <nav>
+        <div class="logo">ZenCafe</div>
+
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#games">Games</a></li>
@@ -28,13 +29,15 @@
 <section id="about" class="info-section">
     <h2>About ZenCafe</h2>
     <p>
-        A premium neon-themed gaming lounge built for casual and hardcore gamers.
-        Multiplayer battles, VR worlds & ultimate chill vibes.
+        ZenCafe is a premium neon-themed gaming lounge built for casual
+        and hardcore gamers. Experience multiplayer battles,
+        VR worlds and ultimate chill vibes.
     </p>
 </section>
 
-<section id="games" class="info-section">
+<section id="games" class="info-section dark-section">
     <h2>Our Games</h2>
+
     <div class="game-grid">
         <div class="game-card">🎮 Multiplayer Arenas</div>
         <div class="game-card">🔫 FPS & Shooter</div>
@@ -46,11 +49,11 @@
 <section id="contact" class="info-section">
     <h2>Book Your Gaming Slot</h2>
 
-    <form class="booking-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
+    <form class="booking-form" action="#success">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
 
-        <select name="game" required>
+        <select required>
             <option value="" disabled selected>Select Game</option>
             <option>Multiplayer Arenas</option>
             <option>FPS & Shooter</option>
@@ -58,20 +61,23 @@
             <option>VR Adventures</option>
         </select>
 
-        <textarea name="message" placeholder="Message (optional)"></textarea>
+        <textarea placeholder="Message (optional)"></textarea>
 
-        <button type="submit" class="cta-button">Submit Booking</button>
-
-        <div class="success-message">
-            Booking Confirmed! See you at ZenCafe 🎮
-        </div>
+        <button type="submit" class="cta-button">
+            Submit Booking
+        </button>
     </form>
+
+    <!-- Success Message -->
+    <div id="success" class="success-message">
+        ✅ Booking Confirmed! See you at ZenCafe 🎮
+    </div>
+
 </section>
 
 <footer>
-    <p>© 2026 ZenCafe Gaming Lounge</p>
+    © 2026 ZenCafe Gaming Lounge
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
